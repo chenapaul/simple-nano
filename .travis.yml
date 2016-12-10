@@ -1,0 +1,35 @@
+language: emacs-lisp
+sudo: no
+
+env:
+  - EVM_EMACS=emacs-24.3-travis
+  - EVM_EMACS=emacs-24.4-travis
+  - EVM_EMACS=emacs-24.5-travis
+  - EVM_EMACS=emacs-25.1-travis
+  - EVM_EMACS=emacs-git-snapshot-travis
+
+before_install:
+  #- curl -fsSkL https://gist.github.com/rejeep/ebcd57c3af83b049833b/raw > travis.sh && source ./travis.sh
+  - export PATH=$HOME/.evm/bin:$PATH
+  - export PATH=$HOME/.cask/bin:$PATH
+
+  - git clone https://github.com/rejeep/evm.git $HOME/.evm
+  - evm config path /tmp
+  - evm install $EVM_EMACS --use --skip
+ 
+  - curl -fsSkL https://raw.github.com/cask/cask/master/go | python
+
+install:
+  - cask install
+
+matrix:
+  allow_failures:
+    - env: EVM_EMACS=emacs-git-snapshot-travis
+
+script:
+  cask exec ert-runner
+
+# Local Variables:
+# indent-tabs-mode: nil
+# coding: utf-8
+# End:
