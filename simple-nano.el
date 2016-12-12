@@ -15,5 +15,10 @@
   `(* ,@args))
 
 
+(defmacro backwards (sexp)
+  "Reverse SEXP."
+  (reverse sexp))
+
+
 (provide 'simple-nano)
 ;;; simple-nano.el ends here
