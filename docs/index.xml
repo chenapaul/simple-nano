@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emacs pkg simple-nano Docs</title>
+    <title>simple-nano Docs</title>
     <link>https://chenapaul.github.io/simple-nano/</link>
-    <description>Recent content on Emacs pkg simple-nano Docs</description>
+    <description>Recent content on simple-nano Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Wed, 17 Jan 2018 09:37:45 +0000</lastBuildDate>
     
 	<atom:link href="https://chenapaul.github.io/simple-nano/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Simple-nano overview</title>
+      <link>https://chenapaul.github.io/simple-nano/</link>
+      <pubDate>Wed, 17 Jan 2018 09:37:45 +0000</pubDate>
+      
+      <guid>https://chenapaul.github.io/simple-nano/</guid>
+      <description>Emacs package starter This repo can be used as the base for Emacs package development. It use Cask as the project management tool, also tests are included. travis-ci is enabled as the CI tool. coveralls is enabled as the coverage statistics tool.
+Don&amp;#39;t use anywhere
+This Emacs package actually do nothing, be setup only with some nice tool and used as the base for development. And don,t use anywhere.</description>
+    </item>
     
   </channel>
 </rss>
