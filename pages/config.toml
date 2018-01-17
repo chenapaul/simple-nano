@@ -1,6 +1,6 @@
 baseurl = "https://chenapaul.github.io/simple-nano/"
 languageCode = "en-us"
-title = "Emacs pkg simple-nano Docs"
+title = "simple-nano Docs"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
@@ -11,7 +11,7 @@ publishDir = "../docs"
 [params]
     # General information
     author = "chenapaul"
-    description = "A sample Emacs pkg as a starter"
+    description = "Emacs package development starter"
     copyright = "Released under the MIT license"
 
     # Repository
@@ -48,7 +48,7 @@ publishDir = "../docs"
 
 
 [[menu.main]]
-    name   = "Simple-nano"
+    name   = "Overview"
     url    = "/"
     weight = 0
 
