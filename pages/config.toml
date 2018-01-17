@@ -1,0 +1,80 @@
+baseurl = "https://chenapaul.github.io/simple-nano/"
+languageCode = "en-us"
+title = "Emacs pkg simple-nano Docs"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+publishDir = "../docs"
+
+[params]
+    # General information
+    author = "chenapaul"
+    description = "A sample Emacs pkg as a starter"
+    copyright = "Released under the MIT license"
+
+    # Repository
+    provider = "GitHub"
+    repo_url = "https://github.com/chenapaul/simple-nano"
+
+    version = "0.0.1"
+    #logo = "images/logo.png"
+    logo = ""
+    favicon = ""
+
+    permalink = "#"
+
+    # Custom assets
+    custom_css = []
+    custom_js  = []
+
+    # Syntax highlighting theme
+    highlight_css  = ""
+
+    [params.palette]
+        primary = "blue"
+        accent  = "teal"
+
+    [params.font]
+        text = "Ubuntu"
+        code = "Ubuntu Mono"
+
+
+[social]
+    twitter = "chen_apaul"
+    github  = "chenapaul"
+    email   = "chen.apaul@gmail.com"
+
+
+[[menu.main]]
+    name   = "Simple-nano"
+    url    = "/"
+    weight = 0
+
+#[[menu.main]]
+#    name   = "Getting started"
+#    url    = "getting-started/"
+#    weight = 10
+#
+#[[menu.main]]
+#    name   = "Adding content"
+#    url    = "adding-content/"
+#    weight = 20
+#
+#[[menu.main]]
+#    name   = "Roadmap"
+#    url    = "roadmap/"
+#    weight = 30
+#
+#[[menu.main]]
+#    name   = "License"
+#    url    = "license/"
+#    weight = 40
+
+
+[blackfriday]
+    smartypants    = true
+    fractions = true
+    smartDashes = true
+    plainIDAnchors = true

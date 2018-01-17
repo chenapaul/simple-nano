@@ -1,1 +1,7 @@
 .cask/
+
+# pages
+docs/images/colors.png
+docs/images/favicon.ico
+docs/images/logo.png
+docs/images/screen.png
